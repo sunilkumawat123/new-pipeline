@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t your-dockerhub-username/covid-predictor:latest .
+        run: docker build -t sunil796/covid-predictor:latest .
 
       - name: Push Docker Image
-        run: docker push your-dockerhub-username/covid-predictor:latest
+        run: docker push sunil796/covid-predictor:latest
